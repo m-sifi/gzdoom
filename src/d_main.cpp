@@ -118,6 +118,7 @@
 #include "hw_clock.h"
 #include "hwrenderer/scene/hw_drawinfo.h"
 #include "doomfont.h"
+#include "sm_init.h"
 
 #ifdef __unix__
 #include "i_system.h"  // for SHARE_DIR
@@ -3602,6 +3603,11 @@ static int D_DoomMain_Internal (void)
 		}
 
 		D_DoAnonStats();
+
+		if (!SM_Init())
+		{
+			return 1;
+		}
 
 		I_UpdateWindowTitle();
 

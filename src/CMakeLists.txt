@@ -876,6 +876,7 @@ set (PCH_SOURCES
 	sound/s_doomsound.cpp
 	serializer_doom.cpp
 	scriptutil.cpp
+	sm_init.cpp
 	st_stuff.cpp
 	r_data/v_palette.cpp
 	wi_stuff.cpp
@@ -1256,7 +1257,7 @@ if( UNIX )
 	endif()
 endif()
 
-target_link_libraries( zdoom ${ZDOOM_LIBS} gdtoa lzma ${ZMUSIC_LIBRARIES} )
+target_link_libraries( zdoom ${ZDOOM_LIBS} gdtoa lzma ${ZMUSIC_LIBRARIES} ${LIBSM64_LIBRARIES})
 
 include_directories( .
 	common/audio/sound

@@ -1,0 +1,13 @@
+{
+    "cmake.configureSettings": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        // "CMAKE_INSTALL_PREFIX": "$HOME/.local",
+        "FMOD_LIBRARY": "/Developer/FMOD Programmers API Mac/api/lib/libfmodex.dylib",
+        "FMOD_INCLUDE_DIR": "/Developer/FMOD Programmers API Mac/api/inc/",
+        "ZMUSIC_LIBRARIES": "/Users/sifi/.local/lib/libzmusic.dylib",
+        "ZMUSIC_INCLUDE_DIR": "/Users/sifi/.local/include/",
+        "LIBSM64_LIBRARIES": "/Users/sifi/.local/lib/libsm64.so",
+        "LIBSM64_INCLUDE_DIR": "/Users/sifi/.local/include/",
+        "NO_ASM": "true",
+    }
+}

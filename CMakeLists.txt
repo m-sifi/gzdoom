@@ -190,6 +190,7 @@ option( NO_OPENAL "Disable OpenAL sound support" OFF )
 find_package( BZip2 )
 find_package( JPEG )
 find_package( ZLIB )
+find_package( libsm64 )
 
 include( TargetArch )
 
@@ -199,8 +200,8 @@ if( ${ZDOOM_TARGET_ARCH} MATCHES "x86_64" )
 	set( HAVE_VM_JIT ON )
 endif()
 
-option (HAVE_VULKAN "Enable Vulkan support" ON)
-option (HAVE_GLES2 "Enable GLES2 support" ON)
+option (HAVE_VULKAN "Enable Vulkan support" OFF)
+option (HAVE_GLES2 "Enable GLES2 support" OFF)
 
 # no, we're not using external asmjit for now, we made too many modifications to our's.
 # if the asmjit author uses our changes then we'll update this.
